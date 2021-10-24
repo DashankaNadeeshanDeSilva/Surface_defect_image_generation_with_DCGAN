@@ -1,0 +1,14 @@
+## Train from the scratch
+# Batch size, Learning rate and Training epochs is user preferred.
+# Path to data should be given with respect to the location of the main running script
+
+python3 train_transfer_learn_finetune_D_finetune_G.py --dataroot data/ifpt/train/ --num_epochs 200 --batch_size 50 --lr 0.0002 
+
+## Continue training after stop
+
+python3 train_transfer_learn_finetune_D_finetune_G.py --dataroot data/ifpt/train/ --netG checkpoints/netG.pth --netD checkpoints/netD.pth --num_epochs 1 --lr 0.0002 --batch_size 50
+
+## Generate images after training
+#Number of images to be generated is given with argument "n" and generated images can be found in output/generated_images
+
+python3 generate.py --netG checkpoints/netG.pth --n 64

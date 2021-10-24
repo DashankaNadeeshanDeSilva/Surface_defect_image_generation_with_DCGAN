@@ -1,0 +1,82 @@
+Checking for pre trained models...
+layer  main.0.weight  is frozen
+layer  main.1.weight  is frozen
+layer  main.1.bias  is frozen
+layer  main.3.weight  is frozen
+layer  main.4.weight  is frozen
+layer  main.4.bias  is frozen
+layer  main.6.weight  is frozen
+layer  main.7.weight  is frozen
+layer  main.7.bias  is frozen
+layer  main.9.weight  NOT frozen
+layer  main.10.weight  NOT frozen
+layer  main.10.bias  is frozen
+layer  main.12.weight  NOT frozen
+Pretrained Generator model loaded
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+   ConvTranspose2d-1            [-1, 512, 4, 4]         819,200
+       BatchNorm2d-2            [-1, 512, 4, 4]           1,024
+              ReLU-3            [-1, 512, 4, 4]               0
+   ConvTranspose2d-4            [-1, 256, 8, 8]       2,097,152
+       BatchNorm2d-5            [-1, 256, 8, 8]             512
+              ReLU-6            [-1, 256, 8, 8]               0
+   ConvTranspose2d-7          [-1, 128, 16, 16]         524,288
+       BatchNorm2d-8          [-1, 128, 16, 16]             256
+              ReLU-9          [-1, 128, 16, 16]               0
+  ConvTranspose2d-10           [-1, 64, 32, 32]         131,072
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+             ReLU-12           [-1, 64, 32, 32]               0
+  ConvTranspose2d-13            [-1, 3, 64, 64]           3,072
+             Tanh-14            [-1, 3, 64, 64]               0
+================================================================
+Total params: 3,576,704
+Trainable params: 134,272
+Non-trainable params: 3,442,432
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 3.00
+Params size (MB): 13.64
+Estimated Total Size (MB): 16.64
+----------------------------------------------------------------
+layer  main.0.weight  is frozen
+layer  main.2.weight  is frozen
+layer  main.3.weight  is frozen
+layer  main.3.bias  is frozen
+layer  main.5.weight  is frozen
+layer  main.6.weight  is frozen
+layer  main.6.bias  is frozen
+layer  main.8.weight  NOT frozen
+layer  main.9.weight  NOT frozen
+layer  main.9.bias  is frozen
+layer  main.11.weight  NOT frozen
+Pretrained Discriminator model loaded
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           3,072
+         LeakyReLU-2           [-1, 64, 32, 32]               0
+            Conv2d-3          [-1, 128, 16, 16]         131,072
+       BatchNorm2d-4          [-1, 128, 16, 16]             256
+         LeakyReLU-5          [-1, 128, 16, 16]               0
+            Conv2d-6            [-1, 256, 8, 8]         524,288
+       BatchNorm2d-7            [-1, 256, 8, 8]             512
+         LeakyReLU-8            [-1, 256, 8, 8]               0
+            Conv2d-9            [-1, 512, 4, 4]       2,097,152
+      BatchNorm2d-10            [-1, 512, 4, 4]           1,024
+        LeakyReLU-11            [-1, 512, 4, 4]               0
+           Conv2d-12              [-1, 1, 1, 1]           8,192
+          Sigmoid-13              [-1, 1, 1, 1]               0
+================================================================
+Total params: 2,765,568
+Trainable params: 2,106,368
+Non-trainable params: 659,200
+----------------------------------------------------------------
+Input size (MB): 0.05
+Forward/backward pass size (MB): 2.31
+Params size (MB): 10.55
+Estimated Total Size (MB): 12.91
+----------------------------------------------------------------
+Starting Tranfer-learning Training Loop....
+slurmstepd: error: *** JOB 703183 ON g034 CANCELLED AT 2021-10-17T21:30:38 ***

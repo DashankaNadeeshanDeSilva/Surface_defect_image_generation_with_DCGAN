@@ -1,0 +1,9 @@
+# Train from the scratch
+
+python3 train.py --dataroot data/ifpt/train_contrast_changed/ --num_epochs 200 --batch_size 50 --lr 0.0002 
+
+# Continue training after stop
+python3 train.py --dataroot data/ifpt/train_contrast_changed/ --netG checkpoints/netG.pth --netD checkpoints/netD.pth --num_epochs 1 --lr 0.0002 --batch_size 50
+
+# Generate images after training
+python3 generate.py --netG checkpoints/netG.pth
