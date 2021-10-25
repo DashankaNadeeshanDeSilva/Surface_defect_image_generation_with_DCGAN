@@ -47,6 +47,6 @@ Fine-tuning and training on the target dataset should be done for both classes.
 
 ## 03. CNN Classifier to test the generated images.
 
-### CNN Classifier to test the generated images after Fine-tuning and training on the target dataset.
+CNN Classifier to test the generated images after Fine-tuning and training on the target (IFPT) dataset. The classifier is first trained only on generated images and then tested on original images from the target dataset.
 
 
