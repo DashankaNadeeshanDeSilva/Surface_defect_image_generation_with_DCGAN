@@ -6,9 +6,9 @@
 2. Image pre-processing and dataset creating scripts.
 3. CNN Classifier to test the generated images.
 
-## Training the DCGAN to generate surface defect images.
+## 01. Training the DCGAN to generate surface defect images.
 
-### 01. Training the DCGAN on source dataset (Severstal Steel Defect Detection dataset
+### (a) Training the DCGAN on source dataset (Severstal Steel Defect Detection dataset).
 
 1. Change the working directory to `DCGAN/DCGAN_to_train_on_source_data/`.
 2. Install the dependencies with `requirements.txt`
@@ -27,7 +27,7 @@ $ python3 train.py --dataroot data/source_data/ --num_epochs 10 --batch_size 25 
 ```
 7. After training one can test the images by generating images with the trained model. 
 
-### 02. Fine-tuning the DCGAN on the targe dataset (IFPT dataset).
+### (b) Fine-tuning the DCGAN on the targe dataset (IFPT dataset).
 
 1. Change the working directory to `DCGAN/DCGAN_to_train_on_target_data_with_fine-tuning`
 2. Place the image dataset for each class in the relevant directory.
