@@ -43,8 +43,7 @@ Fine-tuning and training on the target dataset should be done for both classes.
 ### This section contains 3 scripts:
 1. Image splitting to create the source dataset from the original images.
 2. Resizing images for both source and target datasets.
-3. Renaming images to annotate the images to create the dataset as the
-outcome.
+3. Renaming images to annotate the images to create an image dataset.
 
 ## 03. CNN Classifier to test the generated images.
 
